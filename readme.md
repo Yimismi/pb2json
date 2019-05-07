@@ -1,7 +1,6 @@
 ```
 将pb文件中message转换成一个json case，直接输入命令显示帮助
 
-
 Usage: pb2json [-proto_file] [-proto_path] [-message_name] [-output_path]
 
 Options:
