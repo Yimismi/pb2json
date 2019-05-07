@@ -75,7 +75,7 @@ func (c *Context) MapVal(fd *desc.FieldDescriptor) (interface{}, error) {
 	case descriptor.FieldDescriptorProto_TYPE_SINT32:
 		return c.Sint32V, nil
 	case descriptor.FieldDescriptorProto_TYPE_SINT64:
-		return c.Sfixed64V, nil
+		return c.Sint64V, nil
 	case descriptor.FieldDescriptorProto_TYPE_SFIXED32:
 		return c.Sfixed32V, nil
 	case descriptor.FieldDescriptorProto_TYPE_SFIXED64:
