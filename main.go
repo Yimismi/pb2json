@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
+	pb2json "github.com/pb2json/proc"
 	"os"
-	pb2json "pb2json/proc"
 )
 
 var c = pb2json.Config{
