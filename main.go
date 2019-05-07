@@ -34,10 +34,11 @@ func init() {
 }
 func usage() {
 	fmt.Fprintf(os.Stderr, `
-Usage: pb2json [-proto_file]
+将pb文件中message转换成一个json case，直接输入命令显示帮助
 
-Options:
-`)
+Usage: pb2json [-proto_file] [-proto_path] [-message_name] [-output_path]
+
+Options:`)
 	flag.PrintDefaults()
 }
 
