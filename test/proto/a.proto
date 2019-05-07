@@ -1,0 +1,29 @@
+syntax = "proto2";
+package a;
+
+message Student {
+    required string name = 1;
+    optional string id = 2;
+}
+
+message Course {
+    optional string id = 1;
+    optional string name = 2;
+    repeated string chapter = 3;
+}
+
+message R {
+    required Student s = 1;
+    required Course c = 2;
+}
+
+message CircleA {
+    optional CircleA a = 1;
+    optional CircleB b = 2;
+    required string ca = 3;
+}
+message CircleB {
+    optional CircleA a = 1;
+    optional CircleB b = 2;
+    required string cb = 3;
+}

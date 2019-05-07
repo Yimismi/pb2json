@@ -1,0 +1,5 @@
+import "a.proto";
+package b;
+message x {
+    required a.Student s = 1;
+}
