@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	pb2json "github.com/pb2json/proc"
+	pb2json "github.com/Yimismi/pb2json/proc"
 	"os"
 )
 

@@ -13,7 +13,7 @@ message Course {
 }
 
 message R {
-    required Student s = 1;
+    required Student s_s = 1;
     required Course c = 2;
 }
 

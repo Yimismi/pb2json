@@ -2,6 +2,7 @@ package proc
 
 import (
 	"fmt"
+	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/desc/protoparse"
@@ -30,7 +31,7 @@ func (c *Converter) Convert(ctx *Context) {
 		c.convertMsg(md, make(map[string]bool))
 	}
 	for name, msg := range c.msgMap {
-		bs, e := msg.MarshalJSONIndent()
+		bs, e := msg.MarshalJSONPB(&jsonpb.Marshaler{Indent: "  ", OrigName: true})
 		if e != nil {
 			fmt.Fprintf(os.Stderr, "message[%s]转json错误. error:%+v", name, e)
 			continue
