@@ -27,3 +27,20 @@ message CircleB {
     optional CircleB b = 2;
     required string cb = 3;
 }
+message TypeTest {
+    required double double_v = 1;
+    required float float_v = 2;
+    required int32 int32_v = 3;
+    required int64 int64_v = 4;
+    required uint32 uint32_v = 5;
+    required uint64 uint64_v = 6;
+    required sint32 sint32_v = 7;
+    required sint64 sint64_v = 8;
+    required fixed32 fixed32_v = 9;
+    required fixed64 fixed64_v = 10;
+    required sfixed32 sfixed32_v = 11;
+    required sfixed64 sfixed64_v = 12;
+    required bool bool_v = 13;
+    required string string_v = 14;
+    required bytes bytes_v = 15;
+}
